@@ -1,6 +1,6 @@
 package dev.luiz.mastersys.domain.enums;
 
-public class StatusFatura {
+public enum StatusFatura {
     ABERTA,
     PAGA,
     CANCELADA,
