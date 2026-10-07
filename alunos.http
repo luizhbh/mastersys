@@ -1,0 +1,76 @@
+@baseUrl = http://localhost:8080
+
+### Cadastrar aluno
+POST {{baseUrl}}/alunos
+Content-Type: application/json
+
+{
+  "nome" : "João da Silva",
+  "dataNascimento" : "1995-08-15",
+  "sexo" : "M",
+  "telefone" : "12345678910",
+  "celular" : "12345678910",
+  "email" : "teste@gmail.com",
+  "observacao" : "Aluno iniciante",
+  "endereco" : "Rua teste",
+  "numero" : "123",
+  "complemento" : "Apartamento 404",
+  "bairro" : "Centro",
+  "cidade" : "Bauru",
+  "estado" : "SP",
+  "cep" : "888802410"
+}
+
+### Listar Alunos
+GET {{baseUrl}}/alunos
+
+### Listar alunos com paginação
+GET {{baseUrl}}/alunos?page=0&size=10&sort=nome,asc
+
+### Buscar aluno por Id
+GET {{baseUrl}}/alunos/1
+
+### Atualizar aluno
+PUT {{baseUrl}}/alunos/1
+Content-Type: application/json
+
+{
+  "nome" : "João da Silva Atualizado",
+  "dataNascimento" : "1995-08-15",
+  "sexo" : "M",
+  "telefone" : "12345678910",
+  "celular" : "12345678910",
+  "email" : "teste@gmail.com",
+  "observacao" : "Aluno iniciante",
+  "endereco" : "Rua teste",
+  "numero" : "123",
+  "complemento" : "Apartamento 404",
+  "bairro" : "Centro",
+  "cidade" : "Bauru",
+  "estado" : "SP",
+  "cep" : "888802410"
+}
+
+### Excluir aluno
+DELETE {{baseUrl}}/alunos/1
+
+### Cadastrar aluno
+POST {{baseUrl}}/alunos
+Content-Type: application/json
+
+{
+  "nome" : "Luiz Henrique",
+  "dataNascimento" : "2007-04-20",
+  "sexo" : "M",
+  "telefone" : "12345678910",
+  "celular" : "12345678910",
+  "email" : "teste@gmail.com",
+  "observacao" : "Aluno iniciante",
+  "endereco" : "Rua teste",
+  "numero" : "123",
+  "complemento" : "Apartamento 404",
+  "bairro" : "Centro",
+  "cidade" : "Bauru",
+  "estado" : "SP",
+  "cep" : "888802410"
+}

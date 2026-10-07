@@ -13,7 +13,7 @@ public class Matricula {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(name = "data+matricula")
+    @Column(name = "data_matricula")
     private LocalDate dataMatricula;
 
     @Column(name = "dia_vencimento")
@@ -26,7 +26,7 @@ public class Matricula {
     private StatusMatricula status = StatusMatricula.ATIVA;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "aluno_id")
+    @JoinColumn(name = "alunos_id")
     private Aluno aluno;
 
     @PrePersist
